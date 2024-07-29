@@ -1,0 +1,256 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Personal Portfolio Website</title>
+    <link rel="stylesheet" href="style.css">
+    <script src="https://kit.fontawesome.com/c4254e24a8.js" crossorigin="anonymous"></script>
+</head>
+<body>
+<div id="header">
+    <div class="container">
+        <nav>
+            <!--<img src="images/logo.png" class="logo">!-->
+            <ul id="sidemenu">
+                <li><a href="#header">Home</a></li>
+                <li><a href="#about">About</a></li>
+                <!--<li><a href="#services">Services</a></li>!-->
+                <li><a href="#portfolio">Portfolio</a></li>
+                <li><a href="#contact">Contact</a></li>
+                <i class="fas fa-times" onclick="closemenu()"></i>
+            </ul>
+            <i class="fas fa-bars" onclick="openmenu()"></i>
+        </nav>
+        <div class="header-text">
+            <p>Full-Stack Developer</p>
+            <h1>Hi, I'm <span>Bhagavath Maddukuri</span><br></h1>
+        </div>
+    </div>
+</div>
+<!-- -----------about---------- -->
+<div id="about">
+    <div class="container">
+        <div class="row">
+            <div class="about-col-1">
+                <img src="images/user.png">
+            </div>
+            <div class="about-col-2">
+                <h1 class="sub-title">About Me</h1>
+                <p>
+                    I am Bhagavath Sai Maddukuri, a Full-Stack Java Developer with over three years of experience in Java, JavaScript, React, Angular, C#, and Java Spring Boot. I hold a Master’s in Computer Science from the University of North Texas and a Bachelor’s in Computer Science and Engineering from Gitam University, India.
+                    
+                    My professional experience includes developing Java APIs, RESTful web services, and dynamic web applications at Wipro Limited, and contributing to advanced Field Service Mobile and Web applications at Lexron Technologies. I have led projects in sentiment analysis, automated text summarization, and women safety app development.
+                    
+                    I hold certifications in RPA from Automation Anywhere and Python programming, and I have published research in the Journal of Engineering and Advanced Technology. I am committed to continuous learning and delivering high-quality technical solutions..</p>
+
+                <div class="tab-titles">
+                    <p class="tab-links active-link" onclick="opentab('skills')">Skills</p>
+                    <p class="tab-links" onclick="opentab('experience')">Experience</p>
+                    <p class="tab-links" onclick="opentab('education')">Education</p>
+                </div>
+                <div class="tab-contents active-tab" id="skills">
+                    <ul>
+                        <li><span>Java API Development</span><br>Developed project-specific Java APIs, leveraging data structures, algorithms, and core Java principles.</li>
+                        <li><span>Front-End Development</span><br>Created dynamic web pages using HTML5, CSS3, JavaScript, ReactJS, jQuery, Bootstrap, SASS, and Angular 8 for single-page applications</li>
+                        <li><span>Back-End Development</span><br>Developed web services using RESTful APIs, Java, and Spring framework. Worked on business modules using Hibernate and Spring technologies.</li>
+                        <li><span>Database Management</span><br>Utilized MySQL for database management and integration within web applications</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="experience">
+                    <ul>
+                        <li><span>Sep 2022 - May 2024</span><br>Student Admin Clark hall, University of North Texas.</li>
+                        <li><span>Feb 2020 - July 2022</span><br>Project Engineer, Wipro Limited, India.</li>
+                        <li><span>Sep 2019 - Feb 2020</span><br>Internship at Lexron Technologies, India.</li>
+                    </ul>
+                </div>
+                <div class="tab-contents" id="education">
+                    <ul>
+                        <li><span>Aug 2022 - May 2024</span><br>Masters in Computer Science, University of North Texas (UNT), Denton, TX</li>
+                        <li><span>Aug 2016 - May 2020</span><br>Bachelor in Computer Science and Engineering, Gitam University</li>
+
+                    </ul>
+                </div>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ---------services---------------- -->
+<!--<div id="services">
+    <div class="container">
+        <h1 class="sub-title">My Services</h1>
+        <div class="services-list">
+            <div>
+                <i class="fas fa-code"></i>
+                <h2>Web Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fas fa-crop-alt"></i>
+                <h2>UI/UX Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+            <div>
+                <i class="fab fa-app-store"></i>
+                <h2>App Design</h2>
+                <p>Lorem ipsum dolor sit amet, consectetur adipiscing elit. Sed nulla nibh, tincidunt sit amet sapien quis.</p>
+                <a href="#">Learn more</a>
+            </div>
+        </div>
+    </div>
+</div>
+<!-- ----------portfolio------------ -->
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Projects</h1>
+        <div class="work-list">
+            <div class="work">
+                <img src="images/Designer.jpeg">
+                <div class="layer">
+                    <h3>Sentiment Analysis in Twitter using R | R, Machine Learning</h3>
+                    <p>• Designed a system to determine whether the expressed opinion in the text is positive, negative, or neutral which involved
+                        collecting Twitter data, preprocessing the text, and applying machine learning techniques to classify the sentiment of each
+                        tweet.</p><br>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Designer (1).jpeg">
+                <div class="layer">
+                    <h3>Automated Text Summarization using Machine Learning | Python, Machine Learning</h3>
+                    <p>• Designed a project that aims to develop an automated text summarization system using machine learning techniques.<br></p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Designer (2).jpeg">
+                <div class="layer">
+                    <h3>Weather Journal App — HTML, CSS, and JavaScript</h3>
+                    <p>Developed a Weather Journal App using HTML, CSS, and JavaScript, integrating the OpenWeatherMap API for dynamic weather updates and responsive UI design.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>
+            <div class="work">
+                <img src="images/Designer (3).jpeg">
+                <div class="layer">
+                    <h3>Women Safety App | Thunkable</h3>
+                    <p>Designed a simple android application used mainly for women safety purposes which mainly shares location based on GPS
+                        by a shake on the phone it sends emergency messages to the registered contacts.</p>
+                    <a href="#"><i class="fas fa-external-link-alt"></i></a>
+                </div>
+            </div>    
+        </div>
+        <!--<a href="#" class="btn">See more</a>-->
+    </div>
+</div>
+<div id="portfolio">
+    <div class="container">
+        <h1 class="sub-title">Publications</h1>
+        <div class="work1-list">
+            <div class="work1">
+                <img src="images/Paper.png">
+                <div class="layer1">
+                    <h3>Published a paper for Automated Text Summarization using machine learning.</h3>
+                    <p>• It reduces the given text and gives us an exact summary of the text document.</p><br>
+                    <a href="https://www.ijeat.org/portfolio-item/d7278049420/"><i class="fa-solid fa-link"></i></a>
+                </div>
+            </div>
+        </div>
+</div>
+<!-- ----------contact------------- -->
+<div id="contact">
+    <div class="container">
+        <div class="row">
+            <div class="contact-left">
+                <h1 class="sub-title">Contact Me</h1>
+                <p><i class="fas fa-paper-plane"></i> maddukuribhagavath@gmail.com</p>
+                <p><i class="fas fa-phone-square-alt"></i> +19402978025</p>
+                <html lang="en">
+                    <head>
+                        <meta charset="UTF-8">
+                        <meta name="viewport" content="width=device-width, initial-scale=1.0">
+                        <title>LinkedIn Icon</title>
+                        <!-- Include Font Awesome CSS -->
+                        <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.0.0-beta3/css/all.min.css">
+                    </head>
+                    <body>
+                        <div class="social-icons">
+                            <a href="https://www.linkedin.com/in/bhagavath-sai-maddukuri-960429178" target="_blank">
+                                <i class="fab fa-linkedin"></i>
+                            </a>
+                            <a href="https://www.instagram.com/bhagavath_maddukuri/" target="_blank">
+                                <i class="fa-brands fa-instagram"></i>
+                            </a>
+                        </div>
+                    </body>
+                    </html>             
+                <a href="images/Resume_Bhagavath 2.pdf" download class="btn btn2">Download CV</a>
+            </div>
+            <!--<div class="contact-right">
+                <form name="submit-to-google-sheet">
+                    <input type="text" name="Name" placeholder="Your Name" required>
+                    <input type="email" name="Email" placeholder="Your Email" required>
+                    <textarea name="Message" rows="6" placeholder="Your Message"></textarea>
+                    <button type="submit" class="btn btn2">Submit</button>
+                </form>
+                <span id="msg"></span>
+            </div>-->
+        </div>
+    </div>
+</div>
+
+
+
+<script>
+
+    var tablinks = document.getElementsByClassName("tab-links");
+    var tabcontents = document.getElementsByClassName("tab-contents");
+
+    function opentab(tabname){
+        for(tablink of tablinks){
+            tablink.classList.remove("active-link");
+        }
+        for(tabcontent of tabcontents){
+            tabcontent.classList.remove("active-tab");
+        }
+        event.currentTarget.classList.add("active-link");
+        document.getElementById(tabname).classList.add("active-tab");
+    }
+
+</script>
+
+<script>
+
+    var sidemeu = document.getElementById("sidemenu");
+
+    function openmenu(){
+        sidemeu.style.right = "0";
+    }
+    function closemenu(){
+        sidemeu.style.right = "-200px";
+    }
+
+</script>
+<!--<script>
+    const scriptURL = '< add you own link here >' // add your own app script link here
+    const form = document.forms['submit-to-google-sheet']
+    const msg = document.getElementById("msg")
+  
+    form.addEventListener('submit', e => {
+      e.preventDefault()
+      fetch(scriptURL, { method: 'POST', body: new FormData(form)})
+        .then(response => {
+            msg.innerHTML = "Message sent successfully"
+            setTimeout(function(){
+                msg.innerHTML = ""
+            },5000)
+            form.reset()
+        })
+        .catch(error => console.error('Error!', error.message))
+    })
+  </script>-->
+</body>
+</html>
